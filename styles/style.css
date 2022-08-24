@@ -14,38 +14,41 @@ a{
     color: whitesmoke;
 }
 
-    .header {
-        background-color: #000;
+    .header {        
         padding: 10px;
+        width: 100%;
         height: 65px;
         display: flex;
         justify-content: center;
-        align-items: center;
-   
+        align-items: center;        
+        background-color: #0E0E0E;  
     
 
     }
         .menu-container{
             display: flex;
             align-items: center;
-            background-color: #000;
+            background-color: #0E0E0E;
             padding: 10px;
-            height: 50px;
-            width: 100%;
+            height: 100%;
+            width: 1700px;
+            margin: auto;
+            justify-content: space-between;
             
                     
         }
             .logo{
                 display: flex;
                 align-items: center;
-                flex: 1 1 auto;
+                height: 100%;
+                
                 
                 
                 
                 
             }
                 .logo img{
-                    height: 50px;
+                    height: 45px;
                     /*El margin va asi: top right botton y left*/
                     margin: 0 5px 0px 30px;
                     
@@ -58,52 +61,143 @@ a{
                     word-spacing: -2px;
                 }
             .menu{
-                display: flex;
+                display: flex;            
                 align-items: center;
-                padding-right: 30px;
-                               
-                
-
             }
-                .menu a{
-                                    
-                    padding-right: 40px;
-                    
-                }
-                .menu a p{
-                    font-size: 14px;
-                   
-                    
-                    
-                }
-               
-                .menu a p:hover{
-                    border-bottom: 2px solid white  ;
-                }
-                                              
+                .nav{
+                    display: flex;
+                    padding-right: 30px;
                  
-            .redes{
-                   align-items: center;
+                }
+                    .nav a{
+                                        
+                        padding-right: 40px;
+                
+                    }
+                    .nav a p{
+                        font-size: 14px;
+                        
+                        
+                    }
+                
+                    .nav a p:hover{
+                        border-bottom: 2px solid white  ;
+                    }
+                                                
+                    
+                .redes{
+                    align-items: center;
 
-             }
-                .redes a{
-                    padding-right: 20px;
                 }
-                .redes a:hover{
-                    color: grey;
-                }
+                    .redes a{
+                            padding-right: 20px;
+                    }
+                    .redes a:hover{
+                            color: grey;
+                    }
     
+ /*Landing Page*/                     
     .section-1{ 
-        display: flex;
+       
         
         
     }
-        .folie-imagen{
+        .contenedor-landing{
+            width: 100%;
+            height: 600px;
+            background-color: #0E0E0E;
             
-            background: url(../images/Landing/Profe\ Alejo\ waikru.jpg);
-            background-size: cover;
-        }
-        .folie-texto{
-            color: ;
             
+           
         }
+            .contenedor{
+                padding-top: 20px;
+                height: 100%;
+                max-width: 1700px;
+                margin: auto;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                
+
+            }
+        
+                .folie-texto{
+                    max-width: 550px;
+                    color: white;
+                    
+                
+                }
+                    .folie-texto button{
+                        display: flex;
+                        color: white;
+                        font-size: 12px;
+                        background-color:#444444;
+                        border-radius: 30px;
+                        border: none  ;
+                        padding: 5px 20px 5px 20px;
+                        font-weight: bold;
+                        text-align: center;
+                        cursor: pointer;
+                        box-shadow: 2px 2px 25px -1px #444444;
+                        
+
+                    }
+                    
+                    .folie-texto button:hover{
+                        background-color: grey;
+                    }
+                    .folie-texto button p{
+                        margin-left: 30px;
+                    }
+                    .folie-texto h1{
+                        font-size: 42px;
+                        font-weight: bold;
+                        margin-top: 25px;
+
+                    }
+                    .folie-texto h3{
+                        font-size: 18px;
+                        margin-top: 50px;
+
+                    }
+                .form{
+                    margin-top: 50px;
+                    display: flex;
+
+                }
+                    .form input{
+                        border: none;
+                        font-size: 16px;
+                        padding: 15px 250px 15px 10px;
+                        border-radius: 5px;
+
+                    }
+                    .form button{
+                        
+                        background-color: #E8C900;
+                        color: black;
+                        border-radius: 5px;
+                        margin-left:  10px;
+                        text-align: center;
+                        align-items: center;
+                        cursor: pointer;
+                        font-size: 16px;
+                        box-shadow: 2px 2px 25px -10px #E8C900;
+                        
+
+                    }
+                        .form button:hover{
+                            background-color: #B8A000;
+                        }
+                .p-terminos{
+                    font-size: 12px;
+                    margin-top: 10px;
+
+                }
+                .folie-imagen{
+                    
+                }
+                    .folie-imagen img{
+                        height: 550px;
+                    }
