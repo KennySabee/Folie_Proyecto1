@@ -17,55 +17,93 @@ a{
     .header {
         background-color: #000;
         padding: 10px;
-        height: 100px;
+        height: 65px;
         display: flex;
         justify-content: center;
         align-items: center;
-        border-bottom: 1px solid white ;
-        
-
+   
     
 
     }
         .menu-container{
             display: flex;
             align-items: center;
-            justify-content: space-between;
             background-color: #000;
             padding: 10px;
             height: 50px;
             width: 100%;
+            
                     
         }
             .logo{
                 display: flex;
                 align-items: center;
+                flex: 1 1 auto;
+                
+                
                 
                 
             }
                 .logo img{
-                    height: 65px;
-                    margin-left: 30px;
-                    margin-right: 35px;
+                    height: 50px;
+                    /*El margin va asi: top right botton y left*/
+                    margin: 0 5px 0px 30px;
+                    
                 }
                 .logo a{
-                    font-weight: 400px;
+                     /*no me cogia font weight cunado ponia numeros, debe ser por el tipo de fuente, mejor usar bold*/
+                    font-weight: bold;
                     font-size: x-large;
+                    letter-spacing: 0.2px;
+                    word-spacing: -2px;
                 }
             .menu{
+                display: flex;
+                align-items: center;
+                padding-right: 30px;
+                               
                 
 
             }
                 .menu a{
-                    font-weight: 600px;
-                    padding-right: 50px;
+                                    
+                    padding-right: 40px;
+                    
                 }
-                .menu a:hover{
-                    color: #6E6D6F;
+                .menu a p{
+                    font-size: 14px;
+                   
+                    
+                    
                 }
+               
+                .menu a p:hover{
+                    border-bottom: 2px solid white  ;
+                }
+                                              
+                 
             .redes{
+                   align-items: center;
 
-            }
+             }
                 .redes a{
                     padding-right: 20px;
                 }
+                .redes a:hover{
+                    color: grey;
+                }
+    
+    .section-1{ 
+        display: flex;
+        
+        
+    }
+        .folie-imagen{
+            
+            background: url(../images/Landing/Profe\ Alejo\ waikru.jpg);
+            background-size: cover;
+        }
+        .folie-texto{
+            color: ;
+            
+        }
