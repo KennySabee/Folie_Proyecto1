@@ -1,13 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
 *{
     margin: 0;
     padding: 0; 
     box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
-.container {
-    font-family: sans-serif;
+
    
-}
+
 
 a{
     text-decoration: none;
@@ -19,9 +21,11 @@ a{
         width: 100%;
         height: 65px;
         display: flex;
+        position: fixed;
         justify-content: center;
         align-items: center;        
         background-color: #0E0E0E;  
+        z-index: 1;
     
 
     }
@@ -29,9 +33,9 @@ a{
             display: flex;
             align-items: center;
             background-color: #0E0E0E;
-            padding: 10px;
+            flex: 1 1 auto;
             height: 100%;
-            width: 1700px;
+            max-width: 1700px;
             margin: auto;
             justify-content: space-between;
             
@@ -50,23 +54,24 @@ a{
                 .logo img{
                     height: 45px;
                     /*El margin va asi: top right botton y left*/
-                    margin: 0 5px 0px 30px;
+                    margin: 0 10px 0px 30px;
                     
                 }
                 .logo a{
                      /*no me cogia font weight cunado ponia numeros, debe ser por el tipo de fuente, mejor usar bold*/
-                    font-weight: bold;
-                    font-size: x-large;
+                    font-weight: 700;
+                    font-size: 24px;
                     letter-spacing: 0.2px;
                     word-spacing: -2px;
                 }
             .menu{
                 display: flex;            
-                align-items: center;
+                align-items: flex-start;
             }
                 .nav{
                     display: flex;
                     padding-right: 30px;
+                    align-items: center;
                  
                 }
                     .nav a{
@@ -75,17 +80,19 @@ a{
                 
                     }
                     .nav a p{
-                        font-size: 14px;
+                        font-size: 16px;
                         
                         
                     }
                 
                     .nav a p:hover{
-                        border-bottom: 2px solid white  ;
+                        border-bottom: 2px solid whitesmoke  ;
                     }
                                                 
                     
                 .redes{
+                    display: flex;
+                    padding-right: 30px;
                     align-items: center;
 
                 }
@@ -97,27 +104,26 @@ a{
                     }
     
  /*Landing Page*/                     
-    .section-1{ 
+     
        
         
         
-    }
-        .contenedor-landing{
-            width: 100%;
-            height: 600px;
-            background-color: #0E0E0E;
-            
+    
+    .contenedor-landing{
+        width: 100%;
+        height: 700px;
+        background-color: #0E0E0E;           
             
            
         }
-            .contenedor{
-                padding-top: 20px;
-                height: 100%;
-                max-width: 1700px;
-                margin: auto;
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
+        .landing{
+            padding-top: 20px;
+            height: 100%;
+            max-width: 1700px;
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
                 
 
             }
@@ -131,12 +137,12 @@ a{
                     .folie-texto button{
                         display: flex;
                         color: white;
-                        font-size: 12px;
+                        font-size: 14px;
                         background-color:#444444;
                         border-radius: 30px;
                         border: none  ;
                         padding: 5px 20px 5px 20px;
-                        font-weight: bold;
+                        font-weight: 600;
                         text-align: center;
                         cursor: pointer;
                         box-shadow: 2px 2px 25px -1px #444444;
@@ -151,48 +157,54 @@ a{
                         margin-left: 30px;
                     }
                     .folie-texto h1{
-                        font-size: 42px;
-                        font-weight: bold;
-                        margin-top: 25px;
+                        font-size: 60px;
+                        font-weight: 900;
+                        margin-top: 35px;
+                        letter-spacing: 0.1px;
+                        word-spacing: -2px;
 
                     }
                     .folie-texto h3{
-                        font-size: 18px;
+                        font-size: 20px;
+                        font-weight: 400;
+                        margin-top: 70px;
+                        
+
+                    }
+                    .form{
                         margin-top: 50px;
+                        display: flex;
 
                     }
-                .form{
-                    margin-top: 50px;
-                    display: flex;
+                        .form input{
+                            border: none;
+                            font-size: 16px;
+                            padding: 15px 250px 15px 10px;
+                            border-radius: 5px;
 
-                }
-                    .form input{
-                        border: none;
-                        font-size: 16px;
-                        padding: 15px 250px 15px 10px;
-                        border-radius: 5px;
-
-                    }
-                    .form button{
-                        
-                        background-color: #E8C900;
-                        color: black;
-                        border-radius: 5px;
-                        margin-left:  10px;
-                        text-align: center;
-                        align-items: center;
-                        cursor: pointer;
-                        font-size: 16px;
-                        box-shadow: 2px 2px 25px -10px #E8C900;
-                        
-
-                    }
-                        .form button:hover{
-                            background-color: #B8A000;
                         }
-                .p-terminos{
-                    font-size: 12px;
-                    margin-top: 10px;
+                        .form button{
+                            
+                            background-color: #E8C900;
+                            color: black;
+                            border-radius: 5px;
+                            margin-left:  10px;
+                            text-align: center;
+                            align-items: center;
+                            cursor: pointer;
+                            font-size: 16px;
+                            box-shadow: 2px 2px 25px -10px #E8C900;
+                            transition: all 300ms;
+                            
+
+                        }
+                            .form button:hover{
+                                background-color:#E8C900; 
+                                box-shadow: 2px 2px 25px -5px #E8C900;
+                            }
+                    .p-terminos{
+                        font-size: 14px;
+                        margin-top: 20px;
 
                 }
                 .folie-imagen{
@@ -200,4 +212,7 @@ a{
                 }
                     .folie-imagen img{
                         height: 550px;
+                        position: relative;
+                        
+                        
                     }
