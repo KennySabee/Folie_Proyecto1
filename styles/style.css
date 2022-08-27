@@ -18,6 +18,9 @@ a{
     color: whitesmoke;
 }
 
+.container{
+    background-color: #F2F2F2;
+}
     .header {        
         padding: 10px;
         width: 100%;
@@ -224,7 +227,7 @@ a{
         width: 100%;
         height: 900px;
         background-color:  #f2f2f2; 
-        margin-bottom: 100px;
+        
         
     }
         .blog{
@@ -233,8 +236,9 @@ a{
             
            
             background-color: white;
-            box-shadow: 5px 5px 20px 5px;
-            margin: 1em auto;
+            
+            margin:  auto;
+            
            
             
         }
@@ -268,7 +272,9 @@ a{
                 display: grid;
                 grid-template-columns: repeat(3,1fr);
                 gap: 10px 25px;
-                margin-top: 50px;
+                margin-top: 60px;
+                align-items: center;
+                
                                
 
             }
@@ -276,11 +282,13 @@ a{
                 .productos{
                     width: 450px;
                     height: 500px;
-                    border: 2px solid black;
+                    box-shadow: grey 10px 5px 15px 1px;
                     border-radius: 10px;
+                    background-color: #FFFFFF;
                     display: flex;
                     flex-flow: column nowrap; 
-                    color: black;                  ;
+                    color: black;   
+                    margin: auto;               ;
                 }
                     .productos img{
                         max-height: 300px;
@@ -292,18 +300,22 @@ a{
                         font-size: 14px;
                         font-weight: 600;
                         margin-top: 25px;
+                        margin-left: 20px;
 
                     }
                     .productos h4{
                         font-size: 20px;
-                        font-weight: 600;
+                        font-weight: 900;
                         margin-top: 10px;
+                        margin-left: 20px;
 
                     }
                     .productos p{
                         font-size: 18px;
                         font-weight: 300;
                         margin-top: 10px;
+                        margin-left: 20px;
+                        
 
                     }
 
@@ -311,7 +323,9 @@ a{
         
         width: 100%;
         height: 600px;
-        background-color: #0E0E0E;           
+        background-color: #0E0E0E;
+        
+                   
                 
                
     }
@@ -373,7 +387,7 @@ a{
     
                     }
                     .section-2-button{
-                        margin-top: 35px;
+                        margin-top: 55px;
                         color: white;
                         font-size: 16px;
                         background-color:#444444;
@@ -381,16 +395,19 @@ a{
                         border: none  ;
                         padding: 10px 15px 10px 15px;
                         font-weight: 600;
-                        text-transform: uppercase;
+                        text-transform: capitalize;
                         text-align: center;
                         cursor: pointer;
                         box-shadow: 2px 2px 25px -1px #444444;
+                        transition: all 300ms;
+                        
                         
 
                     }
                     
                     .section-2-button:hover{
-                        background-color: grey;    
+                        background-color: #525252;
+                        box-shadow: 2px 2px 205px -5px #525252;    
                        
                     }
                        
@@ -399,39 +416,104 @@ a{
 
 
     .footer {
-        background-color: #000;
-        display: flex;
-        justify-content: center;
-        margin-top: 10px;
+        width: 100%;
+        height: 380px;
+        background-color: #282828;
     }
         .menu-footer{
-            background-color: blueviolet;
             display: flex;
             flex-flow: row nowrap;
             height: 300px;
+            align-items: center;
+            justify-content: space-around;
+            margin-bottom: 50px;
         }
-            .logo-footer{
-                background-color: brown;
-                flex: 0.5 1 auto;
+            .info-footer{
+                
+                height: 100%;
+                margin-top: 80px;
+                letter-spacing: 2px;
+                color: #808080;
+                text-transform: uppercase;
             }
-            .nav-footer{
-                background-color: brown;
-                flex: 2 1 auto;
+                .info-footer h2{
+                    margin-bottom: 15px;
+                }
+                .info-footer ul li{
+                    list-style: none;
+                    margin-top: 15px;
+                    margin-left: 20px;
+                }
+                .info-footer ul li a{
+                    color: #808080;
+                    font-size: 12px;
+                    border-bottom: 1px solid #808080;
+                 }
+            .redes-footer{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                
+
             }
-            .social{
-                background-color: brown;
-                flex: 0.5 1 auto;
+                .footer-button{
+                    margin-top: 30px;
+                    color: #F2F2F2;
+                    font-size: 16px;
+                    background-color:#444444;
+                    border-radius: 5px;
+                    
+                    padding: 15px 35px 15px 35px;
+                    font-weight: 300;
+                    text-transform: capitalize;
+                    letter-spacing: 2px;
+                    text-align: center;
+                    cursor: pointer;
+                    box-shadow: 2px 2px 25px-1px #444444;
+                    transition: all 300ms;
+                }
+                    .footer-button:hover{
+                    background-color:#525252; 
+                    box-shadow: 2px 2px 25px -5px #525252;
+                }
+            .contacto-footer{
+                            
+                height: 100%;
+                margin-top: 100px;
+                letter-spacing: 2px;
+                color: #808080;
+                
             }
+                .email{
+                    margin-top: 25px;
+                    
+                    align-items: center;
+                    justify-content: center;
+                }
+                    .email p{
+                        margin-bottom: 10px;
+                    }
+                    .email p a{
+                        color: #808080;
+                        font-size: 16px;
+                        border-bottom: 1px solid #808080;
+                        margin-bottom: 10px;
+                    }
+        
 
         .pie{
              /* background-color: aqua; */
             text-align: center;
             }
+            .pie hr{
+                border: 1px solid #808080;
+                margin-bottom: 3px;
+            }
             .pie a{
-                color: #fff;
+                color: #808080;
                 font-size: 11px;
                 text-transform: uppercase;
-                padding: 0 10px;
+                
                 letter-spacing: 2px;
                 }
 
